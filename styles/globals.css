@@ -1,11 +1,11 @@
 @font-face {
    font-family: 'Alegreya Sans';
-   src: url('../styles/Alegreya_Sans/AlegreyaSans-Regular.ttf');
+   src: url('../styles/fonts/AlegreyaSans-Regular.ttf');
    font-style: normal;
 }
 @font-face {
    font-family: 'Alegreya Sans';
-   src: url('../styles/Alegreya_Sans/AlegreyaSans-Medium.ttf');
+   src: url('../styles/fonts/AlegreyaSans-Medium.ttf');
    font-weight: bold;
 }
 

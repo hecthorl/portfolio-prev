@@ -2,11 +2,13 @@ import { HiCode, HiOutlineTerminal } from 'react-icons/hi';
 import { FaPenNib } from 'react-icons/fa';
 const ProjectArticle = ({ title, desc, webSite, codeSource, img }) => {
    return (
-      <article className="pt-9">
+      <figure className="pt-9">
          <img className="rounded-lg" src={img} alt="devter" />
          <div className="text-tercero">
             <h3 className="text-3xl my-4">{title}</h3>
-            <p className="text-justify text-lg mb-4">{desc}</p>
+            <blockquote>
+               <p className="text-justify text-lg mb-4">{desc}</p>
+            </blockquote>
             <ul className="space-y-4 mb-6">
                <li>
                   <HiOutlineTerminal className="inline mr-3 text-2xl" />
@@ -37,7 +39,7 @@ const ProjectArticle = ({ title, desc, webSite, codeSource, img }) => {
                </a>
             </div>
          </div>
-      </article>
+      </figure>
    );
 };
 

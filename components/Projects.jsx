@@ -2,7 +2,7 @@ import ProjectArticle from './ProjectArticle';
 
 const Projects = () => {
    return (
-      <section className="px-3 pb-6">
+      <section className="px-5 pb-6">
          <h2 id="proyects" className="text-primero text-2xl font-semibold">
             Proyectos
          </h2>

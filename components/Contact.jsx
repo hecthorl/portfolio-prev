@@ -5,7 +5,7 @@ const Contact = () => {
       <>
          <section
             id="contact"
-            className="px-3 pb-4 pt-8 mt-4 bg-quinto font-alegreya text-tercero"
+            className="px-3 pb-10 pt-8 mt-4 bg-quinto font-alegreya text-tercero"
             style={{ clipPath: 'polygon(100% 100%, 0% 100%, 0% 0%, 100% 12%)' }}
          >
             <h4 className="my-4 text-4xl">Let's Work Together</h4>
@@ -35,7 +35,7 @@ const Contact = () => {
                   <label className="block text-tercero">
                      HOW CAN I HELP YOU?
                   </label>
-                  <textarea className="text-lg text-primero py-1 px-2 w-full border-2 border-tercero rounded-md"></textarea>
+                  <textarea className="text-lg text-primero h-52 py-1 px-2 w-full border-2 border-tercero rounded-md"></textarea>
                </div>
                <button className="px-2 bg-primero border-2 border-tercero rounded-md py-1 text-tercero text-xl focus:outline-none">
                   Submit
