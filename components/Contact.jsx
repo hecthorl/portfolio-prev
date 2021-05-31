@@ -5,8 +5,8 @@ const Contact = () => {
       <>
          <section
             id="contact"
-            className="px-3 pb-10 pt-8 mt-4 bg-quinto font-alegreya text-tercero"
-            style={{ clipPath: 'polygon(100% 100%, 0% 100%, 0% 0%, 100% 12%)' }}
+            className="contact-section sm:text-center"
+            style={{ clipPath: 'polygon(100% 100%, 0% 100%, 0% 0%, 100% 8%)' }}
          >
             <h4 className="my-4 text-4xl">Let's Work Together</h4>
             <span className="text-xl">
@@ -15,29 +15,23 @@ const Contact = () => {
             <form
                onSubmit={e => e.preventDefault()}
                action=""
-               className="flex flex-col mt-4 space-y-3 w-full"
+               className="form-contact sm:grid-cols-2 sm:place-items-center"
             >
-               <div>
+               <div className="w-full">
                   <label className="block">NOMBRE</label>
-                  <input
-                     type="text"
-                     className="text-lg text-primero w-full border-2 border-tercero rounded-md py-1 px-2"
-                  />
+                  <input type="text" className="input" />
                </div>
-               <div>
+               <div className="w-full">
                   <label className="block text-tercero">EMAIL</label>
-                  <input
-                     type="text"
-                     className="text-lg text-primero w-full border-2 border-tercero rounded-md py-1 px-2"
-                  />
+                  <input type="text" className="input" />
                </div>
-               <div>
+               <div className="sm:col-span-2 w-full">
                   <label className="block text-tercero">
                      HOW CAN I HELP YOU?
                   </label>
-                  <textarea className="text-lg text-primero h-52 py-1 px-2 w-full border-2 border-tercero rounded-md"></textarea>
+                  <textarea className="input h-52"></textarea>
                </div>
-               <button className="px-2 bg-primero border-2 border-tercero rounded-md py-1 text-tercero text-xl focus:outline-none">
+               <button className="btn-form sm:col-span-2 sm:max-w-[375px]">
                   Submit
                </button>
             </form>

@@ -21,6 +21,13 @@ const Projects = () => {
             webSite="https://bebebidas.vercel.app/"
             img="/bebebidas.png"
          />
+         <ProjectArticle
+            title="Journal App"
+            desc="Una daily-app, como diario digital, construido con React y firebase"
+            codeSource="https://github.com/hecthorl/react-journal-app"
+            webSite="https://react-journal-app-kappa.vercel.app/"
+            img="/journal-app-2.png"
+         />
       </section>
    );
 };

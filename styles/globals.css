@@ -38,4 +38,16 @@
    .cta-btn {
       @apply focus:outline-none md:animate-bounce my-9 bg-quinto p-3 rounded-full text-tercero font-semibold text-xl;
    }
+   .input {
+      @apply text-lg text-primero w-full border-2 border-tercero rounded-md py-1 px-2;
+   }
+   .btn-form {
+      @apply px-2 bg-primero border-2 w-full border-tercero rounded-md py-1 text-tercero text-xl focus:outline-none;
+   }
+   .form-contact {
+      @apply grid grid-cols-1 mt-11 gap-4 max-w-[730px] text-left mx-auto;
+   }
+   .contact-section {
+      @apply px-3 pb-10 pt-8 mt-4 bg-quinto font-alegreya text-tercero w-full;
+   }
 }
