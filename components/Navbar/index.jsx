@@ -18,9 +18,12 @@ const Navbar = () => {
       <header className={`${bigName} px-3`}>
          <div className="header">
             <div className="h-full">
-               <Link href="/">
-                  <a className={bigName + ' text-3xl font-bold'}>Hector</a>
-               </Link>
+               <a
+                  href="/"
+                  className={bigName + ' text-3xl md:text-4xl font-bold'}
+               >
+                  Hector
+               </a>
             </div>
             <Menu className="hidden md:flex md:gap-7 md:text-2xl" />
 
@@ -32,7 +35,7 @@ const Navbar = () => {
             </div>
             <Transition
                as="nav"
-               className="fixed top-16 left-0 list-none"
+               className="fixed top-16 left-0 list-none z-10"
                show={isActive}
                enter="transition-transform duration-500"
                enterFrom="transform -translate-y-full"

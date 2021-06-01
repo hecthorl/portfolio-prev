@@ -8,8 +8,8 @@ const Contact = () => {
             className="contact-section sm:text-center"
             style={{ clipPath: 'polygon(100% 100%, 0% 100%, 0% 0%, 100% 8%)' }}
          >
-            <h4 className="my-4 text-4xl">Let's Work Together</h4>
-            <span className="text-xl">
+            <h4 className="my-4 text-6xl">Let's Work Together</h4>
+            <span className="text-3xl">
                Have a project you'd like to discuss?
             </span>
             <form
@@ -18,15 +18,19 @@ const Contact = () => {
                className="form-contact sm:grid-cols-2 sm:place-items-center"
             >
                <div className="w-full">
-                  <label className="block">NOMBRE</label>
+                  <label className="text-2xl block tracking-widest mb-2">
+                     NOMBRE
+                  </label>
                   <input type="text" className="input" />
                </div>
                <div className="w-full">
-                  <label className="block text-tercero">EMAIL</label>
+                  <label className="text-2xl block tracking-widest mb-2 text-tercero">
+                     EMAIL
+                  </label>
                   <input type="text" className="input" />
                </div>
                <div className="sm:col-span-2 w-full">
-                  <label className="block text-tercero">
+                  <label className="text-2xl block tracking-widest mb-2 text-tercero">
                      HOW CAN I HELP YOU?
                   </label>
                   <textarea className="input h-52"></textarea>
