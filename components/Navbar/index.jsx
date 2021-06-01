@@ -2,25 +2,28 @@ import { useEffect, useState } from 'react';
 import { Transition } from '@headlessui/react';
 import Link from 'next/link';
 import Buttontoggle from '../Buttontoggle';
-import Li from '../Li';
+import Menu from 'components/Menu';
 
 const Navbar = () => {
    const [isActive, setIsActive] = useState(false);
-   // const ref = useRef();
+
    const bigName = isActive ? 'text-segundo bg-cuarto' : 'text-cuarto';
 
    useEffect(() => {
       window.onscroll = () => setIsActive(false);
+      window.onresize = () => setIsActive(false);
    }, [isActive]);
 
    return (
-      <header className={bigName + ' header-mobile'}>
+      <header className={bigName + ' header'}>
          <div className="h-full">
             <Link href="/">
                <a className={bigName + ' text-3xl font-bold'}>Hector</a>
             </Link>
          </div>
-         <div>
+         <Menu className="hidden md:flex md:gap-7 md:text-2xl" />
+
+         <div className="md:hidden">
             <Buttontoggle
                isActive={isActive}
                onClick={() => setIsActive(!isActive)}
@@ -38,13 +41,7 @@ const Navbar = () => {
             leaveFrom="transform -translate-y-0 opacity-100"
             leaveTo="transform -translate-y-full opacity-0"
          >
-            <ul className="ul-header h-menu">
-               <Li content="Inicio" />
-               <Li content="About me" />
-               <Li content="Skills" />
-               <Li content="Proyectos" href="#proyects" />
-               <Li content="Contacto" href="#contact" />
-            </ul>
+            <Menu className="ul-header md:hidden" />
          </Transition>
       </header>
    );

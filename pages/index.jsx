@@ -13,7 +13,6 @@ export default function Home() {
             <link rel="icon" href="/favicon.ico" />
          </Head>
          <Navbar />
-         <hr className="w-11/12 ml-3 my-1" />
          <Hero />
          <Projects />
          <Contact />

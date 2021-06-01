@@ -27,12 +27,15 @@
 }
 
 @layer components {
+   .header {
+      @apply header-mobile border-b-2 border-tercero md:border-none md:max-w-[900px] mx-auto md:py-10;
+   }
    .ul-header {
-      @apply w-screen flex flex-col items-center text-2xl z-10 text-segundo bg-cuarto gap-10 justify-center;
+      @apply w-screen flex flex-col items-center text-2xl z-10 text-segundo bg-cuarto gap-10 justify-center h-menu;
    }
 
    .header-mobile {
-      @apply relative flex justify-between px-2 py-1 z-30;
+      @apply relative flex justify-between mx-2 py-1 z-30;
    }
 
    .cta-btn {
@@ -45,9 +48,21 @@
       @apply px-2 bg-primero border-2 w-full border-tercero rounded-md py-1 text-tercero text-xl focus:outline-none;
    }
    .form-contact {
-      @apply grid grid-cols-1 mt-11 gap-4 max-w-[730px] text-left mx-auto;
+      @apply grid grid-cols-1 mt-11 gap-4 max-w-[900px] text-left mx-auto;
    }
    .contact-section {
       @apply px-3 pb-10 pt-8 mt-4 bg-quinto font-alegreya text-tercero w-full;
+   }
+   .btn-card {
+      @apply rounded-full bg-quinto px-3 py-2 font-semibold text-xl text-tercero;
+   }
+   .project-card {
+      @apply pt-9 md:grid md:grid-cols-2 md:place-items-center md:gap-4 sm:pb-5 max-w-[900px] sm:mx-auto;
+   }
+   .hero-section {
+      @apply md:my-24 px-3 text-justify text-tercero md:max-w-[900px] md:mx-auto md:px-0 md:grid md:grid-cols-2 md:place-items-end;
+   }
+   .img-hero {
+      @apply rounded-tl-2xl rounded-br-2xl h-img my-5 mx-auto md:mx-0 shadow-img;
    }
 }
