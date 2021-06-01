@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Navbar from 'components/Navbar';
 import Hero from 'components/Hero';
-import Projects from 'components/Projects';
+import Projects from 'components/Projects/Projects';
 import Contact from 'components/Contact';
 
 export default function Home() {
@@ -13,8 +13,10 @@ export default function Home() {
             <link rel="icon" href="/favicon.ico" />
          </Head>
          <Navbar />
-         <Hero />
-         <Projects />
+         <div className="px-3">
+            <Hero />
+            <Projects />
+         </div>
          <Contact />
       </>
    );

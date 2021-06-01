@@ -1,4 +1,4 @@
-import Li from './Li';
+import Li from '../Li';
 
 const Menu = ({ className }) => {
    return (
