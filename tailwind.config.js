@@ -15,17 +15,8 @@ module.exports = {
          boxShadow: {
             img: '-11px -11px #5b8ca2',
          },
-         animation: {
-            loading: 'charge 0.5s linear infinite',
-         },
-         keyframes: {
-            charge: {
-               to: { transform: 'rotate(360deg)' },
-            },
-         },
          height: {
             menu: 'calc(100vh - 62px)',
-            img: '425px',
          },
          fontFamily: {
             alegreya: '"Alegreya Sans"',

@@ -1,9 +1,7 @@
-const Li = ({ content, href }) => {
-   return (
-      <li>
-         <a href={href}>{content}</a>
-      </li>
-   );
-};
+const Li = ({ content, href }) => (
+   <li>
+      <a href={href}>{content}</a>
+   </li>
+);
 
 export default Li;

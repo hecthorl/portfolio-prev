@@ -3,9 +3,9 @@ import ProjectCard from './ProjectCard';
 const Projects = () => {
    return (
       <section className="px-5 pb-6">
-         <div className="md:mx-auto md:max-w-[900px] text-2xl md:text-3xl">
+         <div className="title-sp">
             <h2 id="proyects" className="text-primero pb-1 font-semibold">
-               Proyectos
+               Proyectos Destacados
             </h2>
             <hr className="border border-tercero" />
          </div>

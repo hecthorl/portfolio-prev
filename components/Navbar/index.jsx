@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Transition } from '@headlessui/react';
-import Link from 'next/link';
 import Buttontoggle from '../Buttontoggle';
 import Menu from 'components/Navbar/Menu';
 
@@ -25,7 +24,7 @@ const Navbar = () => {
                   Hector
                </a>
             </div>
-            <Menu className="hidden md:flex md:gap-7 md:text-2xl" />
+            <Menu className="hidden md:flex md:gap-14 md:text-2xl" />
 
             <div className="md:hidden">
                <Buttontoggle

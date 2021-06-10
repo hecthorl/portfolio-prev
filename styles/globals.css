@@ -28,44 +28,53 @@
 
 @layer components {
    .header {
-      @apply header-mobile border-b-2 border-tercero md:border-none md:max-w-[900px] mx-auto md:py-10;
+      @apply flex justify-between py-1 border-b-2 border-tercero md:border-none md:max-w-[1200px] mx-auto md:py-10 md:px-5;
    }
    .ul-header {
       @apply w-screen flex flex-col items-center text-2xl z-10 text-segundo bg-cuarto gap-10 justify-center h-menu;
    }
 
-   .header-mobile {
-      @apply relative flex justify-between py-1 z-30;
+   .toogle-btn {
+      @apply text-5xl text-tercero focus:outline-none w-[41px];
    }
 
    .cta-btn {
-      @apply focus:outline-none md:animate-bounce my-9 bg-quinto p-3 rounded-full text-tercero font-semibold text-xl;
+      @apply focus:outline-none md:animate-pulse my-9 bg-quinto p-3 rounded-full text-tercero font-semibold text-xl;
    }
+   .hero-section {
+      @apply md:my-24 px-3 text-justify text-tercero md:max-w-[1200px] md:w-full md:px-5 md:grid md:grid-cols-2 md:place-items-end md:mx-auto;
+   }
+   .img-hero {
+      @apply rounded-tl-2xl rounded-br-2xl h-[425px] my-5 mx-auto  shadow-img;
+   }
+
+   .btn-card {
+      @apply rounded-full bg-quinto px-3 py-2 font-semibold text-xl text-tercero;
+   }
+   .title-sp {
+      @apply md:mx-auto md:max-w-[1200px] text-2xl md:text-5xl my-10;
+   }
+   .project-card {
+      @apply pt-9 md:grid md:grid-cols-2 md:gap-20 sm:pb-5 max-w-[1200px] sm:mx-auto;
+   }
+
+   .contact-section {
+      @apply sm:text-center px-6 pb-10 pt-24 mt-20 bg-quinto font-alegreya text-tercero w-full;
+   }
+   .form-contact {
+      @apply grid grid-cols-1 mt-11 gap-x-10 gap-y-5 max-w-[900px] text-left mx-auto sm:grid-cols-2 sm:place-items-center;
+   }
+   .label-input {
+      @apply text-2xl block tracking-widest mb-2;
+   }
+
    .input {
       @apply text-2xl ring focus:ring-segundo ring-offset-4 focus:ring-offset-tercero text-gray-900 w-full  rounded-md py-1 px-2;
    }
    .btn-form {
-      @apply px-2 bg-primero border-2 w-full border-tercero rounded-md py-1 text-tercero text-xl focus:outline-none;
+      @apply px-2 bg-primero border-2 w-full border-tercero rounded-md py-1 text-tercero text-xl focus:outline-none sm:col-span-2 sm:max-w-[375px];
    }
-   .form-contact {
-      @apply grid grid-cols-1 mt-11 gap-x-10 gap-y-5 max-w-[900px] text-left mx-auto;
-   }
-   .contact-section {
-      @apply px-6 pb-10 pt-8 mt-4 bg-quinto font-alegreya text-tercero w-full;
-   }
-   .btn-card {
-      @apply rounded-full bg-quinto px-3 py-2 font-semibold text-xl text-tercero;
-   }
-   .project-card {
-      @apply pt-9 md:grid md:grid-cols-2 md:place-items-center md:gap-8 sm:pb-5 max-w-[900px] sm:mx-auto;
-   }
-   .hero-section {
-      @apply md:my-24 px-3 text-justify text-tercero md:max-w-[900px] md:w-full md:px-0 md:grid md:grid-cols-2 md:place-items-end md:mx-auto;
-   }
-   .img-hero {
-      @apply rounded-tl-2xl rounded-br-2xl h-img my-5 mx-auto md:mx-0 shadow-img;
-   }
-   .toogle-btn {
-      @apply text-5xl text-tercero focus:outline-none w-[41px];
+   .footer-section {
+      @apply text-center bg-primero text-gray-500 py-3;
    }
 }

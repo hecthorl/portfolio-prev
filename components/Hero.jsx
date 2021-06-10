@@ -2,7 +2,7 @@ const Hero = () => {
    return (
       <section className="hero-section">
          <div>
-            <h1 className="md:text-6xl text-4xl my-8 font-semibold font-alegreya">
+            <h1 className="md:text-7xl text-4xl my-8 font-semibold font-alegreya">
                Hey, I'm Hector.
             </h1>
             <p className="md:text-4xl text-2xl font-alegreya">
