@@ -2,7 +2,7 @@ import ProjectCard from './ProjectCard';
 
 const Projects = () => {
    return (
-      <section className="px-5 pb-6">
+      <section className="px-5 pb-6 space-y-12">
          <div className="title-sp">
             <h2 id="proyects" className="text-primero pb-1 font-semibold">
                Proyectos Destacados

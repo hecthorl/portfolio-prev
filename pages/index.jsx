@@ -9,14 +9,15 @@ export default function Home() {
       <>
          <Head>
             <title>Hector</title>
-            <meta name="description" content="Hector's Portfolio" />
+            <meta
+               name="description"
+               content="Hector's Portfolio, Soy frontend developer, enfocado en el entorno de tecnologias con Javascript."
+            />
             <link rel="icon" href="/favicon.ico" />
          </Head>
          <Navbar />
-         <div className="px-3">
-            <Hero />
-            <Projects />
-         </div>
+         <Hero />
+         <Projects />
          <Contact />
       </>
    );

@@ -11,6 +11,7 @@ module.exports = {
             cuarto: '#F9F7F3',
             quinto: '#DC4139',
             // img: '#5b8ca2',
+            scroll: '#a7a7a7',
          },
          boxShadow: {
             img: '-11px -11px #5b8ca2',
@@ -24,7 +25,7 @@ module.exports = {
       },
    },
    variants: {
-      extend: {},
+      scrollbar: ['rounded'],
    },
-   plugins: [],
+   plugins: [require('tailwind-scrollbar')],
 };
