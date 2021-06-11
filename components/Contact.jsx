@@ -3,12 +3,8 @@ import { FaGithub } from 'react-icons/fa';
 const Contact = () => {
    return (
       <>
-         <section
-            id="contact"
-            className="contact-section"
-            style={{ clipPath: 'polygon(100% 100%, 0% 100%, 0% 0%, 100% 8%)' }}
-         >
-            <h4 className="my-4 text-6xl">Let's Work Together</h4>
+         <section id="contact" className="contact-section">
+            <h4 className="my-10 text-6xl">Let's Work Together</h4>
             <span className="text-3xl">
                Have a project you'd like to discuss?
             </span>

@@ -2,16 +2,14 @@ const Hero = () => {
    return (
       <section className="hero-section">
          <div>
-            <h1 className="md:text-7xl text-4xl my-8 font-semibold font-alegreya">
-               Hey, I'm Hector.
-            </h1>
-            <p className="md:text-4xl text-2xl font-alegreya">
+            <h1 className="hero-title">Hey, I'm Hector.</h1>
+            <p className="hero-text">
                Soy frontend developer, enfocado en el entorno de tecnologias con
                Javascript.
             </p>
-            <button className="cta-btn">See projects</button>
+            <button className="hero-btn">See projects ↓</button>
          </div>
-         <figure className="px-3 md:px-0">
+         <figure>
             <img
                src="/me.png"
                alt="Picture of the author"

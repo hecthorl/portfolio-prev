@@ -1,6 +1,8 @@
-const Li = ({ content, href }) => (
+const Li = ({ content, href, className }) => (
    <li>
-      <a href={href}>{content}</a>
+      <a className={className} href={href}>
+         {content}
+      </a>
    </li>
 );
 

@@ -9,7 +9,7 @@ const ProjectCard = ({ title, desc, webSite, codeSource, img }) => {
             <blockquote>
                <p className="text-justify text-lg mb-4">{desc}</p>
             </blockquote>
-            <ul className="space-y-4 mb-6">
+            <ul className="space-y-1 mb-6">
                <li>
                   <HiOutlineTerminal className="inline mr-3 text-2xl" />
                   DINAMIC WEB SITE DEVELOPMENT
@@ -22,11 +22,11 @@ const ProjectCard = ({ title, desc, webSite, codeSource, img }) => {
                   STATIC SITE DEVELOPMENT
                </li>
             </ul>
-            <div className="space-x-2">
+            <div className="space-x-6">
                <a className="btn-card" href={webSite} target="_blank">
                   Visitar
                </a>
-               <a className="btn-card " href={codeSource} target="_blank">
+               <a className="btn-card" href={codeSource} target="_blank">
                   Ver código
                </a>
             </div>
