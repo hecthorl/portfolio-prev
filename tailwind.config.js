@@ -14,7 +14,7 @@ module.exports = {
             scroll: '#a7a7a7',
          },
          boxShadow: {
-            img: '-11px -11px #5b8ca2',
+            hero: '5px 7px 20px 0px #000000c7',
          },
          height: {
             menu: 'calc(100vh - 62px)',
@@ -22,13 +22,15 @@ module.exports = {
          fontFamily: {
             alegreya: '"Alegreya Sans"',
          },
-         backgroundImage: theme => ({
+         backgroundImage: {
             bebebidas: "url('../public/bebebidas.png')",
             journal: "url('../public/journal-app-2.png')",
             devtter: "url('../public/devter.png')",
             overlay:
-               'linear-gradient(to bottom, rgb(255 255 255 / 20%) 0%, #212120 60%, #212120 100%)',
-         }),
+               'linear-gradient(to right, rgb(255 255 255 / 20%) 0%, #232323fa 60%, #191919 100%)',
+            overlay_r:
+               'linear-gradient(to bottom, rgb(255 255 255 / 20%) 0%, #232323fa 60%, #191919 100%)',
+         },
       },
    },
    variants: {

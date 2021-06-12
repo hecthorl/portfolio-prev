@@ -54,7 +54,7 @@
       @apply focus:outline-none animate-bounce my-9 bg-quinto p-3 rounded-full text-tercero font-semibold text-xl;
    }
    .img-hero {
-      @apply rounded-tl-2xl rounded-br-2xl h-[425px] my-5 mx-auto shadow-img;
+      @apply rounded-full ring ring-primero ring-offset-4 ring-offset-segundo h-[425px] mx-auto shadow-hero;
    }
 
    .projects-section {
@@ -71,23 +71,31 @@
    .project-card {
       @apply max-w-[1200px] sm:mx-auto bg-left-top bg-cover rounded-md min-h-[400px] relative;
    }
+   .project-card-container {
+      @apply md:bg-overlay bg-overlay_r w-full rounded-md h-[400px] flex justify-center items-end md:justify-end md:items-center;
+   }
+   .project-card-icons {
+      @apply text-2xl flex p-2 rounded-full  space-x-4 absolute top-1 left-1 bg-black bg-opacity-60 backdrop-filter backdrop-blur-md text-white;
+   }
+   .project-card-content {
+      @apply text-white p-2 rounded-md max-w-full md:backdrop-filter md:backdrop-blur-sm md:max-w-[50%] md:space-y-12 space-y-5 text-opacity-70;
+   }
 
    .contact-section {
-      @apply sm:text-center px-8 pb-10 pt-24 mt-20 bg-quinto font-alegreya text-tercero w-full;
-      /*clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 100% 8%);*/
+      @apply sm:text-center px-5 h-[calc(100vh-50px)] pt-5 mt-20 flex flex-col justify-around items-center bg-quinto font-alegreya text-tercero w-full font-bold;
    }
    .form-contact {
-      @apply grid grid-cols-1 mt-20 gap-x-10 gap-y-5 max-w-[900px] text-left mx-auto sm:grid-cols-2 sm:place-items-center;
+      @apply grid grid-cols-1 w-full gap-x-10 max-w-[900px] text-left sm:grid-cols-2 sm:place-items-center h-[65%];
    }
    .label-input {
-      @apply text-2xl block tracking-widest mb-2;
+      @apply text-lg md:text-2xl block tracking-widest mb-2;
    }
 
    .input {
-      @apply text-2xl ring focus:ring-segundo ring-offset-4 focus:ring-offset-tercero text-gray-900 w-full  rounded-md py-1 px-2;
+      @apply text-xl ring focus:ring-segundo ring-offset-4 focus:ring-offset-tercero text-gray-900 w-full  rounded-md p-1 h-[fit-content];
    }
    .btn-form {
-      @apply px-2 bg-primero border-2 w-full border-tercero rounded-md py-1 text-tercero text-2xl focus:outline-none sm:col-span-2 sm:max-w-[375px];
+      @apply px-2 bg-primero border-2 mt-10 w-full border-tercero rounded-md py-1 text-tercero text-xl md:text-2xl focus:outline-none h-[fit-content] sm:col-span-2 sm:max-w-[375px];
    }
    .footer-section {
       @apply text-center bg-primero text-gray-500 py-3;

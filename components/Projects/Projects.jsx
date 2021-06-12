@@ -9,10 +9,10 @@ const Projects = () => {
             </h2>
             <hr className="border border-tercero" />
          </div>
-         <div className="divide-tercero divide-y space-y-10">
+         <div className="space-y-10">
             <ProjectCard
                title="Devtter"
-               desc="Un clon de tweeter para desarrolladores, construido con NextJS y firebase."
+               desc="Un clon de tweeter para desarrolladores con real-time, construido con NextJS y firebase."
                codeSource="https://github.com/hecthorl/devtter"
                webSite="https://devtter-ten.vercel.app/home"
                img="bg-devtter"
@@ -26,7 +26,7 @@ const Projects = () => {
             />
             <ProjectCard
                title="Journal App"
-               desc="Una daily-app, como diario digital, construido con React y firebase"
+               desc="Una daily-app desktop-only (como diario digital), construido con React y firebase"
                codeSource="https://github.com/hecthorl/react-journal-app"
                webSite="https://react-journal-app-kappa.vercel.app/"
                img="bg-journal"
