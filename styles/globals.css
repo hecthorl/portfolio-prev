@@ -42,7 +42,7 @@
    }
 
    .hero-section {
-      @apply md:my-24 px-8 text-justify text-tercero md:max-w-[1200px] md:w-full md:grid md:grid-cols-2 md:place-items-end md:mx-auto;
+      @apply md:my-24 px-5 text-justify text-tercero md:max-w-[1200px] md:w-full md:grid md:grid-cols-2 md:place-items-end md:mx-auto;
    }
    .hero-title {
       @apply md:text-7xl text-4xl my-8 font-semibold font-alegreya;
@@ -51,25 +51,25 @@
       @apply md:text-4xl text-2xl font-alegreya;
    }
    .hero-btn {
-      @apply focus:outline-none md:animate-bounce md:ease-linear my-9 bg-quinto p-3 rounded-full text-tercero font-semibold text-xl;
+      @apply focus:outline-none animate-bounce my-9 bg-quinto p-3 rounded-full text-tercero font-semibold text-xl;
    }
    .img-hero {
       @apply rounded-tl-2xl rounded-br-2xl h-[425px] my-5 mx-auto shadow-img;
    }
 
    .projects-section {
-      @apply px-8 pb-6 space-y-12 pt-24;
+      @apply px-4 pb-6 space-y-12 pt-24;
    }
    .title-sp {
       @apply md:mx-auto md:max-w-[1200px] text-3xl md:text-5xl my-10;
    }
 
    .btn-card {
-      @apply rounded-full bg-quinto px-3 py-2 w-auto font-semibold text-xl text-tercero;
+      @apply rounded-full bg-quinto px-3 py-2 w-auto font-semibold text-xl text-tercero inline-block;
    }
 
    .project-card {
-      @apply pt-10 md:grid md:grid-cols-2 md:gap-20 sm:pb-5 max-w-[1200px] sm:mx-auto;
+      @apply max-w-[1200px] sm:mx-auto bg-left-top bg-cover rounded-md min-h-[400px] relative;
    }
 
    .contact-section {

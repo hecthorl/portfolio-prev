@@ -5,11 +5,11 @@ module.exports = {
    theme: {
       extend: {
          colors: {
-            primero: '#213250',
-            segundo: '#3E6273',
-            tercero: '#C9C9CD',
-            cuarto: '#F9F7F3',
-            quinto: '#DC4139',
+            primero: '#23049d',
+            segundo: '#aa2ee6 ',
+            tercero: '#29bb89',
+            cuarto: '#ff79cd',
+            quinto: '#e6dd3b',
             // img: '#5b8ca2',
             scroll: '#a7a7a7',
          },
@@ -22,6 +22,13 @@ module.exports = {
          fontFamily: {
             alegreya: '"Alegreya Sans"',
          },
+         backgroundImage: theme => ({
+            bebebidas: "url('../public/bebebidas.png')",
+            journal: "url('../public/journal-app-2.png')",
+            devtter: "url('../public/devter.png')",
+            overlay:
+               'linear-gradient(to bottom, rgb(255 255 255 / 20%) 0%, #212120 60%, #212120 100%)',
+         }),
       },
    },
    variants: {

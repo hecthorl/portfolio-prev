@@ -15,21 +15,21 @@ const Projects = () => {
                desc="Un clon de tweeter para desarrolladores, construido con NextJS y firebase."
                codeSource="https://github.com/hecthorl/devtter"
                webSite="https://devtter-ten.vercel.app/home"
-               img="/devter.png"
+               img="bg-devtter"
             />
             <ProjectCard
                title="Bebebidas"
                desc="Una app para encontrar recetas de bebidas. Conectadas desde una api con ReactJS."
                codeSource="https://github.com/hecthorl/bebebidas"
                webSite="https://bebebidas.vercel.app/"
-               img="/bebebidas.png"
+               img="bg-bebebidas"
             />
             <ProjectCard
                title="Journal App"
                desc="Una daily-app, como diario digital, construido con React y firebase"
                codeSource="https://github.com/hecthorl/react-journal-app"
                webSite="https://react-journal-app-kappa.vercel.app/"
-               img="/journal-app-2.png"
+               img="bg-journal"
             />
          </div>
       </section>
