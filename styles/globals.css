@@ -72,13 +72,13 @@
       @apply max-w-[1200px] sm:mx-auto bg-left-top bg-cover rounded-md min-h-[400px] relative;
    }
    .project-card-container {
-      @apply md:bg-overlay bg-overlay_r w-full rounded-md h-[400px] flex justify-center items-end md:justify-end md:items-center;
+      @apply w-full rounded-md h-[400px] flex justify-center items-end md:justify-end md:items-center overflow-hidden;
    }
    .project-card-icons {
-      @apply text-2xl flex p-2 rounded-full  space-x-4 absolute top-1 left-1 bg-black bg-opacity-60 backdrop-filter backdrop-blur-md text-white;
+      @apply text-2xl flex p-2 rounded-full  space-x-4 absolute top-1 left-1 bg-primero bg-opacity-60 backdrop-filter backdrop-blur-md text-white;
    }
    .project-card-content {
-      @apply text-white p-2 rounded-md max-w-full md:backdrop-filter md:backdrop-blur-sm md:max-w-[50%] md:space-y-12 space-y-5 text-opacity-70;
+      @apply text-white md:p-7 px-2 pb-6 bg-gradient-to-b from-purple-900 via-purple-600 backdrop-filter backdrop-blur rounded-b-md md:rounded-r max-w-full md:max-w-[45%] md:h-full flex flex-col md:justify-center md:space-y-12 space-y-5 text-opacity-70 md:transform md:translate-x-[95%] md:hover:translate-x-0 md:transition-transform md:duration-300 md:ease-in;
    }
 
    .contact-section {

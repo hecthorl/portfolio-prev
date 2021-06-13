@@ -26,10 +26,6 @@ module.exports = {
             bebebidas: "url('../public/bebebidas.png')",
             journal: "url('../public/journal-app-2.png')",
             devtter: "url('../public/devter.png')",
-            overlay:
-               'linear-gradient(to right, rgb(255 255 255 / 20%) 0%, #232323fa 60%, #191919 100%)',
-            overlay_r:
-               'linear-gradient(to bottom, rgb(255 255 255 / 20%) 0%, #232323fa 60%, #191919 100%)',
          },
       },
    },
