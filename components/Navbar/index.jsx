@@ -16,7 +16,10 @@ const Navbar = () => {
    return (
       <header className={`${bigName} px-3`}>
          <div className="header-wrapper">
-            <a href="/" className={`${bigName} text-3xl md:text-4xl font-bold`}>
+            <a
+               href="/"
+               className={`${bigName} text-3xl md:text-4xl font-bold text-cyan-800 dark:text-cyan-100`}
+            >
                Hector
             </a>
             <Menu className="hidden md:flex md:gap-14 md:text-2xl" />

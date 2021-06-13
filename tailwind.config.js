@@ -1,17 +1,23 @@
 module.exports = {
    mode: 'jit',
    purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-   darkMode: false, // or 'media' or 'class'
+   darkMode: 'class', // or 'media' or 'class'
    theme: {
       extend: {
          colors: {
-            primero: '#23049d',
-            segundo: '#aa2ee6 ',
-            tercero: '#29bb89',
-            cuarto: '#ff79cd',
-            quinto: '#e6dd3b',
-            // img: '#5b8ca2',
-            scroll: '#a7a7a7',
+            cyan: {
+               DEFAULT: '#06B6D4',
+               50: '#C2F5FD',
+               100: '#A9F0FD',
+               200: '#78E8FB',
+               300: '#46E0FA',
+               400: '#15D7F8',
+               500: '#06B6D4',
+               600: '#058BA2',
+               700: '#036171',
+               800: '#02363F',
+               900: '#000C0E',
+            },
          },
          boxShadow: {
             hero: '5px 7px 20px 0px #000000c7',

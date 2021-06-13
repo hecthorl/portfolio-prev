@@ -7,7 +7,7 @@ const Contact = () => {
             <h4 className="transition-[font-size] duration-300 ease-in text-5xl md:text-6xl">
                Let's Work Together
             </h4>
-            <span className="text-2xl md:text-3xl py-10">
+            <span className="text-2xl md:text-3xl">
                Have a project you'd like to discuss?
             </span>
             <form
@@ -25,10 +25,7 @@ const Contact = () => {
                {/* </div> */}
                {/* <div className="sm:col-span-2 w-full"> */}
                {/* <label className="label-input">HOW CAN I HELP YOU?</label> */}
-               <textarea
-                  placeholder="HOW CAN I HELP YOU?"
-                  className="input sm:col-span-2 h-full"
-               ></textarea>
+               <textarea placeholder="HOW CAN I HELP YOU?"></textarea>
                {/* </div> */}
                <button className="btn-form">Submit</button>
             </form>
