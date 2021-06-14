@@ -4,10 +4,13 @@ const Projects = () => {
    return (
       <section className="projects-section">
          <div className="title-sp">
-            <h2 id="proyects" className="text-primero pb-1 font-semibold">
+            <h2
+               id="proyects"
+               className="text-cyan-800 dark:text-cyan-100 pb-1 font-semibold"
+            >
                Proyectos Destacados
             </h2>
-            <hr className="border border-tercero" />
+            <hr className="border border-cyan-800 dark:border-cyan-100" />
          </div>
          <div className="space-y-10">
             <ProjectCard
