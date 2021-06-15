@@ -4,7 +4,7 @@ const Contact = () => {
    return (
       <>
          <section id="contact" className="contact-section">
-            <h4 className="transition-[font-size] duration-300 ease-in text-5xl md:text-6xl">
+            <h4 className="transition-[font-size] duration-300 ease-in text-5xl md:text-6xl mt-8">
                Let's Work Together
             </h4>
             <span className="text-2xl md:text-3xl">
@@ -15,18 +15,9 @@ const Contact = () => {
                action=""
                className="form-contact"
             >
-               {/* <div className="w-full"> */}
-               {/* <label className="label-input">NOMBRE</label> */}
                <input placeholder="NOMBRE" type="text" className="input" />
-               {/* </div> */}
-               {/* <div className="w-full"> */}
-               {/* <label className="label-input">EMAIL</label> */}
                <input placeholder="EMAIL" type="text" className="input" />
-               {/* </div> */}
-               {/* <div className="sm:col-span-2 w-full"> */}
-               {/* <label className="label-input">HOW CAN I HELP YOU?</label> */}
                <textarea placeholder="HOW CAN I HELP YOU?"></textarea>
-               {/* </div> */}
                <button className="btn-form">Submit</button>
             </form>
          </section>
