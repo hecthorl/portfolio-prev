@@ -2,7 +2,7 @@ import { DiReact, DiCode, DiJavascript } from 'react-icons/di';
 const ProjectCard = ({ title, desc, webSite, codeSource, img }) => {
    return (
       <figure className={`project-card ${img}`}>
-         <div className="project-card-container">
+         <div className="project-card-container group">
             <div className="project-card-icons">
                <DiReact />
                <DiCode />

@@ -45,9 +45,9 @@ module.exports = {
                900: '#332100',
             },
          },
-         boxShadow: {
-            hero: '5px 7px 20px 0px #000000c7',
-         },
+         // boxShadow: {
+         //    hero: '5px 7px 20px 0px #000000c7',
+         // },
          height: {
             menu: 'calc(100vh - 62px)',
          },

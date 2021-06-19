@@ -1,11 +1,11 @@
 @font-face {
    font-family: 'Alegreya Sans';
-   src: url('../styles/fonts/AlegreyaSans-Regular.ttf');
+   src: url('../public/fonts/AlegreyaSans-Regular.ttf');
    font-style: normal;
 }
 @font-face {
    font-family: 'Alegreya Sans';
-   src: url('../styles/fonts/AlegreyaSans-Medium.ttf');
+   src: url('../public/fonts/AlegreyaSans-Medium.ttf');
    font-weight: bold;
 }
 
@@ -33,6 +33,9 @@
    .ul-header {
       @apply w-screen flex flex-col items-center text-2xl z-10 gap-10 justify-center h-menu bg-cyan-100 dark:bg-cyan-800 transition-colors duration-300;
    }
+   .name-icon {
+      @apply text-3xl md:text-4xl font-bold text-cyan-800 dark:text-cyan-100;
+   }
    .denied {
       @apply cursor-not-allowed opacity-50;
    }
@@ -41,7 +44,7 @@
       @apply inline-flex flex-shrink-0 h-[25px] w-[61px] border-2 border-transparent rounded-full cursor-pointer md:my-auto transition-colors ease-in-out duration-200 focus:outline-none;
    }
    .toggle-theme-pointer {
-      @apply pointer-events-none inline-block h-[21px] w-[21px] rounded-full shadow-lg transform ring-0 transition ease-in-out duration-200;
+      @apply pointer-events-none inline-block h-[21px] w-[21px] rounded-full shadow-lg ring-0 transition ease-in-out duration-200;
    }
 
    .toogle-btn {
@@ -57,9 +60,7 @@
    .hero-name {
       @apply bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-blue-400 to-[lime] bg-200% animate-iris;
    }
-   .hero-name::before {
-      content: ' ';
-   }
+
    .hero-text {
       @apply md:text-4xl text-2xl font-alegreya;
    }
@@ -67,31 +68,63 @@
       @apply focus:outline-none animate-bounce my-9 bg-cyan p-3 rounded-full font-semibold text-xl;
    }
    .img-hero {
-      @apply rounded-full ring ring-cyan ring-offset-4 ring-offset-cyan h-[425px] mx-auto shadow-hero;
+      @apply rounded-full;
+   }
+
+   .skills-section {
+      @apply px-4 pb-6 pt-24 max-w-[1200px] mx-auto text-cyan-800 space-y-32;
+      @apply md:grid md:grid-cols-2 md:gap-10;
+   }
+   .skills-overview {
+      @apply space-y-12 text-xl;
+   }
+   .skills-overview-title {
+      @apply text-3xl font-alegreya font-bold;
+      @apply md:text-6xl;
+   }
+   .skills-stats {
+      @apply w-full space-y-8;
+   }
+   .skills-cards {
+      @apply grid grid-rows-4 place-items-center gap-10;
+      @apply text-7xl md:grid-cols-2 md:grid-rows-2;
+   }
+   .skills-card-container {
+      @apply bg-cyan-50 text-cyan-800;
+      @apply p-2 flex items-center text-center justify-center flex-col gap-6 rounded-lg shadow-md;
+      @apply md:h-full md:w-full w-[288px] h-[288px];
+   }
+   .skills-card-icon {
+      @apply rounded-full w-[fit-content] bg-cyan-800 text-cyan-50 p-4;
    }
 
    .projects-section {
       @apply px-4 pb-6 space-y-12 pt-24;
    }
+
    .title-sp {
       @apply md:mx-auto md:max-w-[1200px] text-3xl md:text-5xl my-10;
    }
 
    .btn-card {
-      @apply rounded-full bg-cyan px-3 py-2 w-auto font-semibold text-xl text-cyan-50 inline-block dark:text-cyan-800;
+      @apply rounded bg-transparent px-3 py-2 w-auto font-semibold text-xl text-cyan-700 inline-block dark:text-cyan-800;
+      @apply border-2 border-cyan-700 md:hover:border-transparent md:hover:bg-cyan-700 md:hover:text-cyan-100;
+      @apply md:transition-colors md:duration-300;
+      /* @apply dark:text-cyan-100 dark:border-cyan-100; */
    }
 
    .project-card {
-      @apply max-w-[1200px] sm:mx-auto bg-left-top bg-cover rounded-md min-h-[400px] relative shadow-2xl;
+      @apply max-w-[1200px] sm:mx-auto bg-left-top bg-cover rounded-md min-h-[500px] relative shadow-2xl;
    }
    .project-card-container {
-      @apply w-full rounded-md h-[400px] flex justify-center items-end md:justify-end md:items-center overflow-hidden;
+      @apply w-full rounded-md h-[500px] flex justify-center items-end md:justify-end md:items-center overflow-hidden;
    }
    .project-card-icons {
-      @apply text-2xl flex p-2 rounded-full  space-x-4 absolute top-1 left-1 bg-cyan-100 dark:bg-cyan-600 backdrop-filter backdrop-blur dark:text-cyan-100 text-cyan-800;
+      @apply text-2xl flex p-2 rounded-full  space-x-4 absolute top-1 left-1 bg-cyan-100 dark:bg-cyan-600 backdrop-blur dark:text-cyan-100 text-cyan-800;
    }
    .project-card-content {
-      @apply text-cyan-800 dark:text-cyan-50 md:p-7 px-2 pb-6 bg-gradient-to-b from-yellow-400 via-yellow-500 dark:via-yellow-600 dark:from-yellow-500 to-transparent backdrop-filter backdrop-blur rounded-b-md md:rounded-r max-w-full md:max-w-[45%] md:h-full flex flex-col md:justify-center md:space-y-12 space-y-5 text-opacity-70 md:transform md:translate-x-[95%] md:hover:translate-x-0 md:transition-transform md:duration-300 md:ease-in md:animate-pulse md:hover:animate-none;
+      @apply text-cyan-800 dark:text-cyan-50 md:p-7 px-2 pb-6 bg-gradient-to-b from-yellow-400 via-yellow-500 dark:via-yellow-600 dark:from-yellow-500 to-transparent backdrop-blur;
+      @apply rounded-b-md md:rounded-r max-w-full h-1/2 md:max-w-[45%] md:h-full flex flex-col md:justify-center md:space-y-12 space-y-5 text-opacity-70 md:translate-x-[95%] md:transition-transform md:duration-300 md:ease-in md:group-hover:translate-x-0;
    }
 
    .contact-section {

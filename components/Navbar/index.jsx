@@ -6,7 +6,7 @@ import Menu from 'components/Navbar/Menu';
 const Navbar = () => {
    const [isActive, setIsActive] = useState(false);
 
-   const bigName = isActive ? 'text-segundo bg-cuarto' : 'text-cuarto';
+   const bigName = isActive ? 'text-segundo' : 'text-cuarto';
 
    useEffect(() => {
       window.onscroll = () => setIsActive(false);
@@ -14,12 +14,9 @@ const Navbar = () => {
    }, [isActive]);
 
    return (
-      <header className={`${bigName} px-3`}>
+      <header className="px-3">
          <div className="header-wrapper">
-            <a
-               href="/"
-               className={`${bigName} text-3xl md:text-4xl font-bold text-cyan-800 dark:text-cyan-100`}
-            >
+            <a href="/" className={`${bigName} name-icon`}>
                Hector
             </a>
             <Menu className="hidden md:flex md:gap-14 md:text-2xl" />
@@ -34,12 +31,12 @@ const Navbar = () => {
                className="fixed top-16 left-0 list-none z-10"
                show={isActive}
                enter="transition-transform duration-500"
-               enterFrom="transform -translate-y-full"
-               enterTo="transform -translate-x-0"
+               enterFrom="-translate-y-full"
+               enterTo="-translate-x-0"
                //
                leave="transition-[transform, opacity] ease-in-out duration-500"
-               leaveFrom="transform -translate-y-0 opacity-100"
-               leaveTo="transform -translate-y-full opacity-0"
+               leaveFrom="-translate-y-0 opacity-100"
+               leaveTo="-translate-y-full opacity-0"
             >
                <Menu className="ul-header md:hidden" />
             </Transition>
@@ -49,6 +46,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-/**
- *
- */

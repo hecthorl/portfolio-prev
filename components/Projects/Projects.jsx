@@ -10,9 +10,9 @@ const Projects = () => {
             >
                Proyectos Destacados
             </h2>
-            <hr className="border border-cyan-800 dark:border-cyan-100" />
+            <hr className="border border-cyan-300 dark:border-cyan-600" />
          </div>
-         <div className="space-y-10">
+         <div className="space-y-10 md:space-y-32">
             <ProjectCard
                title="Devtter"
                desc="Un clon de tweeter para desarrolladores con real-time, construido con NextJS y firebase."

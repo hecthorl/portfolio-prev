@@ -33,7 +33,11 @@ const Menu = ({ className }) => {
                } toggle-theme-pointer`}
             />
          </Switch>
-         <Li content="Skills" className="denied" />
+         <Li
+            content="Skills"
+            href="#skills"
+            className="md:hover:opacity-60 dark:text-cyan-100 text-cyan-800 transition-opacity duration-300"
+         />
          <Li
             content="Proyectos"
             href="#proyects"
