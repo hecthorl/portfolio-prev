@@ -18,7 +18,9 @@ const Hero = () => {
                Frontend developer, enfocado en el entorno de tecnologías con
                JavaScript.
             </p>
-            <button className="hero-btn">See projects ↓</button>
+            <a href="#proyects" className="hero-btn">
+               See projects ↓
+            </a>
          </div>
          <figure className="md:pr-2 text-center">
             <Image

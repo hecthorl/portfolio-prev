@@ -4,11 +4,11 @@ const Contact = () => {
    return (
       <>
          <section id="contact" className="contact-section">
-            <h4 className="transition-[font-size] duration-300 ease-in text-5xl md:text-6xl mt-8">
-               Let's Work Together
+            <h4 className="contact-title transition-[font-size]">
+               Trabajemos Juntos!
             </h4>
             <span className="text-2xl md:text-3xl">
-               Have a project you'd like to discuss?
+               Tienes un proyecto que te gustaría charlar?
             </span>
             <form
                onSubmit={e => e.preventDefault()}
@@ -17,7 +17,7 @@ const Contact = () => {
             >
                <input placeholder="NOMBRE" type="text" className="input" />
                <input placeholder="EMAIL" type="text" className="input" />
-               <textarea placeholder="HOW CAN I HELP YOU?"></textarea>
+               <textarea placeholder="COMO TE PUEDO AYUDAR?"></textarea>
                <button className="btn-form">Submit</button>
             </form>
          </section>

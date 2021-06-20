@@ -1,4 +1,7 @@
 module.exports = {
+   corePlugins: {
+      ring: false,
+   },
    mode: 'jit',
    purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
    darkMode: 'class', // or 'media' or 'class'
@@ -45,9 +48,6 @@ module.exports = {
                900: '#332100',
             },
          },
-         // boxShadow: {
-         //    hero: '5px 7px 20px 0px #000000c7',
-         // },
          height: {
             menu: 'calc(100vh - 62px)',
          },
