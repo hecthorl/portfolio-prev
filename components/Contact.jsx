@@ -22,7 +22,7 @@ const Contact = () => {
             </form>
          </section>
          <footer className="footer-section">
-            <time>©{new Date().getFullYear()} Hector.</time>
+            <span> Hector Vargas</span>
             <a href="https://github.com/hecthorl" target="_blank">
                <FaGithub className="inline text-2xl ml-2" />
             </a>

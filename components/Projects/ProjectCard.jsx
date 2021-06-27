@@ -14,10 +14,20 @@ const ProjectCard = ({ title, desc, webSite, codeSource, img }) => {
                   <p className="text-justify text-lg">{desc}</p>
                </blockquote>
                <div className="space-x-6">
-                  <a className="btn-card" href={webSite} target="_blank">
+                  <a
+                     className="btn-card"
+                     rel="noopener noreferrer"
+                     href={webSite}
+                     target="_blank"
+                  >
                      Visitar
                   </a>
-                  <a className="btn-card" href={codeSource} target="_blank">
+                  <a
+                     className="btn-card"
+                     rel="noopener noreferrer"
+                     href={codeSource}
+                     target="_blank"
+                  >
                      Ver código
                   </a>
                </div>

@@ -7,7 +7,7 @@ const StatLine = ({ progress, area }) => {
          </div>
          <div className="relative w-full h-1 bg-yellow-200">
             <div
-               className="absolute -top-1 h-3 bg-yellow-400"
+               className="absolute top-0 h-1 bg-white shadow-neon"
                style={{ width: `${progress}%` }}
             ></div>
          </div>

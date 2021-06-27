@@ -4,18 +4,15 @@ const Projects = () => {
    return (
       <section className="projects-section">
          <div className="title-sp">
-            <h2
-               id="proyects"
-               className="text-cyan-800 dark:text-cyan-100 pb-1 font-semibold"
-            >
+            <h2 id="proyects" className="projects-section-title">
                Proyectos Destacados
             </h2>
             <hr className="border border-cyan-300 dark:border-cyan-600" />
          </div>
-         <div className="space-y-10 md:space-y-32">
+         <div className="space-y-24 md:space-y-32">
             <ProjectCard
                title="Devtter"
-               desc="Un clon de tweeter para desarrolladores con real-time, construido con NextJS y firebase."
+               desc="Un clon de tweeter para desarrolladores en tiempo real, construido con NextJS y firebase."
                codeSource="https://github.com/hecthorl/devtter"
                webSite="https://devtter-ten.vercel.app/home"
                img="bg-devtter"

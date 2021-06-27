@@ -11,13 +11,10 @@ const Hero = () => {
                   before=" "
                   className="hero-name before:content-[attr(before)]"
                >
-                  Soy Hector.
+                  Soy Hector
                </span>
             </h1>
-            <p className="hero-text">
-               Frontend developer, enfocado en el entorno de tecnologías con
-               JavaScript.
-            </p>
+            <p className="hero-text">Frontend developer</p>
             <a href="#proyects" className="hero-btn">
                See projects ↓
             </a>

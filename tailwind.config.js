@@ -51,6 +51,9 @@ module.exports = {
          height: {
             menu: 'calc(100vh - 62px)',
          },
+         boxShadow: {
+            neon: '0px 0px 6px 3px #ffed00',
+         },
          fontFamily: {
             alegreya: '"Alegreya Sans"',
          },
