@@ -1,3 +1,5 @@
+import { memo } from 'react';
+
 const Li = ({ content, href, className }) => (
    <li>
       <a className={className} href={href}>
@@ -6,4 +8,4 @@ const Li = ({ content, href, className }) => (
    </li>
 );
 
-export default Li;
+export default memo(Li);

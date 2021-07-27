@@ -67,9 +67,6 @@
    .hero-btn {
       @apply inline-block focus:outline-none animate-bounce my-9 bg-cyan p-3 rounded-full font-semibold text-xl;
    }
-   .img-hero {
-      @apply rounded-full;
-   }
 
    .skills-section {
       @apply px-4 pb-6 pt-10 max-w-[1200px] mx-auto text-cyan-800 space-y-32 dark:text-cyan-100 mt-20;

@@ -26,7 +26,7 @@ const Hero = () => {
                placeholder="blur"
                width={316}
                height={425}
-               className="img-hero"
+               className="rounded-full"
             />
          </figure>
       </section>

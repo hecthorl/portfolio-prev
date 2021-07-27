@@ -20,7 +20,7 @@ export default function Home() {
                as="font"
                crossOrigin="anonymous"
             />
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" href="/Logo-Portfolio.ico" />
          </Head>
          <Navbar />
          <Hero />

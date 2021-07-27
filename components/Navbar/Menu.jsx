@@ -1,16 +1,10 @@
 import { Switch } from '@headlessui/react';
-import { useEffect, useState } from 'react';
 import Li from '../Li';
 import { HiMoon, HiSun } from 'react-icons/hi';
+import useLocalStorage from 'hooks/useLocalStorage';
 
 const Menu = ({ className }) => {
-   const [enabled, setEnabled] = useState(false);
-
-   useEffect(() => {
-      enabled
-         ? document.documentElement.classList.add('dark')
-         : document.documentElement.classList.remove('dark');
-   }, [enabled]);
+   const { theme, setTheme } = useLocalStorage();
 
    return (
       <nav>
@@ -18,17 +12,17 @@ const Menu = ({ className }) => {
             <div className="flex items-center">
                <HiSun className="menu-icon" />
                <Switch
-                  checked={enabled}
-                  onChange={setEnabled}
+                  checked={theme}
+                  onChange={setTheme}
                   className={`${
-                     enabled ? 'bg-cyan-100' : 'bg-cyan-800'
+                     theme ? 'bg-cyan-100' : 'bg-cyan-800'
                   } toggle-theme`}
                >
                   <span className="sr-only">Use setting</span>
                   <span
                      aria-hidden="true"
                      className={`${
-                        enabled
+                        theme
                            ? 'translate-x-9 bg-cyan-800'
                            : 'translate-x-0 bg-cyan-100'
                      } toggle-theme-pointer`}
