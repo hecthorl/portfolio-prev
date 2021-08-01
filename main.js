@@ -1,6 +1,7 @@
-import './style.css'
+const toggleMenuBtn = document.querySelector("#burger-container");
+const menu = document.querySelector(".navigation");
 
-document.querySelector('#app').innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`
+toggleMenuBtn.onclick = () => {
+  menu.classList.toggle("active-menu");
+};
+menu.onclick = () => menu.classList.remove("active-menu");

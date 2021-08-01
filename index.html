@@ -1,13 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="./styles/globalStyles.css" />
+    <title>Hector Vargas</title>
   </head>
   <body>
-    <div id="app"></div>
+    <!-- header section -->
+    <header>
+      <button class="logo-btn">
+        <span>H</span>
+      </button>
+      <button id="burger-container">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navigation">
+        <li>
+          <a href="">Block1</a>
+        </li>
+        <li>
+          <a href="">Block2</a>
+        </li>
+        <li>
+          <a href="">Block3</a>
+        </li>
+        <li>
+          <button></button>
+        </li>
+      </nav>
+    </header>
+
+    <!-- hero section -->
+    <section class="hero-section">
+      <div class="hero-section-content">
+        <h1>Hey, soy Hector</h1>
+        <p>Fronted Developer</p>
+        <button>Ver cositas</button>
+      </div>
+      <img src="./assets/P1010184.JPG" alt="arbolito" />
+    </section>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
