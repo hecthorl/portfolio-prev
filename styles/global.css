@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+img {
+  width: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  outline: none;
+  border: none;
+}
+button:focus {
+  outline: none;
+}
+
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  background-color: #161a22;
+}
+.loader-dom {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+  color: black;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  width: 100%;
+}
+header .logo-btn {
+  background-color: transparent;
+  font-size: 2rem;
+  width: 100%;
+}
+
+/* hero-section */
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  object-fit: cover;
+  object-position: left;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: clip-path 0.3s ease;
+}
+
+.navigation a {
+  color: #2c3e50;
+}
+
+.hero-section-content {
+  border-radius: 20px;
+  padding: 4rem 4rem 2rem 4rem;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0 0 0 / 40%);
+  transition: margin-right 0.2s ease;
+}
+
+.hero-section-content h1 {
+  font-size: 6rem;
+  line-height: 5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section-content h1,
+.hero-section-content h2 {
+  color: white;
+}

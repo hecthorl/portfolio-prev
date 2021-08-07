@@ -4,47 +4,63 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/globalStyles.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <link
+      rel="stylesheet"
+      media="(min-width: 500px)"
+      href="./styles/tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 1440px)"
+      href="./styles/desktop.css"
+    />
+    <script async type="module" src="/main.js"></script>
     <title>Hector Vargas</title>
   </head>
   <body>
     <!-- header section -->
+
+    <!-- hero section -->
+    <section class="hero-section">
+      <div class="hero-section-content">
+        <h1>Hector Vargas</h1>
+        <h2>Frontend Developer</h2>
+      </div>
+    </section>
+
     <header>
-      <button class="logo-btn">
-        <span>H</span>
-      </button>
+      <div>
+        <button class="logo-btn">
+          <span>H</span>
+        </button>
+        <nav class="navigation">
+          <a>about me</a>
+          <a>Projects</a>
+          <a>skills</a>
+          <a>contact</a>
+          <button>theme</button>
+        </nav>
+      </div>
       <button id="burger-container">
         <span></span>
         <span></span>
         <span></span>
       </button>
-
-      <nav class="navigation">
-        <li>
-          <a href="">Block1</a>
-        </li>
-        <li>
-          <a href="">Block2</a>
-        </li>
-        <li>
-          <a href="">Block3</a>
-        </li>
-        <li>
-          <button></button>
-        </li>
-      </nav>
     </header>
 
-    <!-- hero section -->
-    <section class="hero-section">
-      <div class="hero-section-content">
-        <h1>Hey, soy Hector</h1>
-        <p>Fronted Developer</p>
-        <button>Ver cositas</button>
+    <img src="./assets/emile-perron-xrVDYZRGdw4-unsplash.jpg" alt="" />
+    <div class="loader-dom">cargando perro....</div>
+    <section id="about_me">
+      <div>
+        <img src="./assets/me.png" alt="me" />
+        <div class="about_me-content">
+          <h3>Hector Vargas Medina</h3>
+          <p>Desarrollador para web</p>
+        </div>
       </div>
-      <img src="./assets/P1010184.JPG" alt="arbolito" />
     </section>
-
-    <script type="module" src="/main.js"></script>
+    <section id="projects"></section>
   </body>
 </html>
