@@ -1,27 +1,26 @@
-const toggleMenuBtn = document.querySelector("#burger-container");
-const menu = document.querySelector(".navigation");
-const loader = document.querySelector(".loader-dom");
-const header = document.querySelector("header");
+import randomBG from "./randomBG";
 
-toggleMenuBtn.onclick = () => {
-  menu.classList.add("active-menu");
-};
-menu.onclick = () => {
-  console.log("asdasd");
-  menu.classList.remove("active-menu");
-};
+const loader = document.querySelector(".loader-dom");
+const $ = (className) => document.querySelector(className);
 
 document.body.onload = () => {
   console.log("termino la carga");
   loader.remove();
 };
 
-document.body.onscroll = (e) => {
-  const { top, x, y } = header.getBoundingClientRect();
-  console.log({ x, y });
-  if (!top) {
-    header.classList.add("bg-dark");
-  } else {
-    header.classList.remove("bg-dark");
-  }
-};
+const speedChange = 4e3;
+
+setInterval(() => {
+  $(".circle-1").style.backgroundColor = `#${randomBG()}`;
+}, speedChange);
+setInterval(() => {
+  $(".circle-2").style.backgroundColor = `#${randomBG()}`;
+}, speedChange);
+setInterval(() => {
+  $(".circle-3").style.backgroundColor = `#${randomBG()}`;
+}, speedChange);
+
+// const d_value = 520;
+
+// header.style.top = `${d_value}px`;
+// document.body.onscroll = (e) => {};
