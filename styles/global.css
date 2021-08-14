@@ -104,12 +104,12 @@ header {
 
 .about_me-section h4,
 .skills-section h4,
-.soft-skill h4 {
+.soft-skill h4,
+.projects-section h4 {
   font-size: 4rem;
   width: fit-content;
   margin: 0 auto;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
 }
 
 .about_me-section > div {
@@ -320,5 +320,30 @@ header {
 .soft-skills > div > p {
   padding: 2rem 0;
   font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* projects-section */
+
+.projects-section {
+  min-height: 100vh;
+}
+.projects-container {
+  padding: 0 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: repeat(4, minmax(280px, 1fr));
+}
+.projects-container > div {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+}
+.projects-container > div span {
+  font-size: 2rem;
+}
+.projects-container > div p {
+  font-size: 1.4rem;
+  margin: 1rem 0;
   color: rgba(255, 255, 255, 0.7);
 }
