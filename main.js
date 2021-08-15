@@ -1,7 +1,7 @@
 import randomBG from "./randomBG";
 
 const loader = document.querySelector(".loader-dom");
-const $ = (className) => document.querySelector(className);
+const $ = (className) => document.querySelectorAll(className);
 
 document.body.onload = () => {
   console.log("termino la carga");
@@ -10,14 +10,18 @@ document.body.onload = () => {
 
 const speedChange = 4e3;
 
+const funcionDeTipoFlecha = (item) => {
+  item.style.backgroundColor = `#${randomBG()}`;
+};
+
 setInterval(() => {
-  $(".circle-1").style.backgroundColor = `#${randomBG()}`;
+  $(".circle-1").forEach(funcionDeTipoFlecha);
 }, speedChange);
 setInterval(() => {
-  $(".circle-2").style.backgroundColor = `#${randomBG()}`;
+  $(".circle-2").forEach(funcionDeTipoFlecha);
 }, speedChange);
 setInterval(() => {
-  $(".circle-3").style.backgroundColor = `#${randomBG()}`;
+  $(".circle-3").forEach(funcionDeTipoFlecha);
 }, speedChange);
 
 // const d_value = 520;
