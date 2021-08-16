@@ -1,0 +1,40 @@
+@media (min-width: 768px) {
+  header {
+    position: sticky;
+    top: 0;
+  }
+  .navigation {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1rem);
+  }
+  .navigation a {
+    color: white;
+  }
+  .logo-btn {
+    display: auto;
+  }
+  .hero-section {
+    height: auto;
+    padding-top: 30rem;
+  }
+  .hero-section h1 {
+    font-size: 6.5rem;
+  }
+  .hero-section span {
+    font-size: 3.5rem;
+  }
+  .about_me-section {
+    margin-top: 31.5rem;
+  }
+  .about_me-content h3 {
+    font-size: 3.5rem;
+  }
+
+  .intermedio {
+    font-size: 4.5rem;
+  }
+
+  .projects-container > div {
+    flex-direction: row-reverse;
+  }
+}
