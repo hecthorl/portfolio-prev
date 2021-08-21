@@ -23,6 +23,11 @@
   .hero-section span {
     font-size: 3.5rem;
   }
+
+  .about_me-section > div {
+    flex-direction: row;
+  }
+
   .about_me-section {
     margin-top: 31.5rem;
   }

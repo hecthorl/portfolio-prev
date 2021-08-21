@@ -23,8 +23,3 @@ setInterval(() => {
 setInterval(() => {
   $(".circle-3").forEach(funcionDeTipoFlecha);
 }, speedChange);
-
-// const d_value = 520;
-
-// header.style.top = `${d_value}px`;
-// document.body.onscroll = (e) => {};

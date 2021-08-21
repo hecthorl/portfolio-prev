@@ -100,11 +100,9 @@ header {
 }
 
 .hero-section h1 {
-  transition: font-size 0.2s linear;
   font-size: 4.5rem;
 }
 .hero-section span {
-  transition: font-size 0.2s linear;
   font-size: 2rem;
 }
 
@@ -116,6 +114,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin-bottom: 4rem;
 }
 
 .about_me-section h4,
@@ -130,10 +129,10 @@ header {
 }
 
 .about_me-section > div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  width: 100%;
+  display: flex;
   max-width: 1260px;
+  flex-direction: column;
+  gap: 3rem;
   margin: 0 auto;
 }
 
@@ -143,9 +142,7 @@ header {
 
 .about_me-section img {
   max-width: 400px;
-  max-height: 400px;
   min-width: 300px;
-  min-height: 300px;
   object-fit: contain;
 }
 .image-container {
@@ -237,19 +234,20 @@ header {
 
 .about_me-content {
   display: flex;
+  flex-shrink: 10;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .about_me-content h3 {
   font-size: 2.5rem;
-  transition: font-size 0.3s ease-in;
   margin: 2rem 0;
 }
 .about_me-content p {
   font-size: 1.8rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--color-secondary);
+  max-width: 500px;
 }
 
 .about_me-content p:first-of-type {
@@ -270,55 +268,75 @@ header {
 }
 .icons-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   place-content: center;
   gap: 5rem;
-  padding: 0 1rem;
+  padding: 14rem 1rem;
   margin: 0 auto;
   max-width: 1260px;
 }
-.icons-container div:nth-child(1) > div,
-.icons-container div:nth-child(2) > div,
-.icons-container div:nth-child(3) > div,
-.icons-container div:nth-child(4) > div,
-.icons-container div:nth-child(5) > div,
-.icons-container div:nth-child(6) > div,
-.icons-container div:nth-child(7) > div {
+.icons-container h6 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: var(--color-secondary);
+}
+
+/* .icons-container div:nth-child(1) li:nth-child(1) {
+  background: linear-gradient(90deg, rgba(255 255 0 / 5%), transparent);
+  border-left: 5px solid #ffff00;
+}
+.icons-container div:nth-child(1) li:nth-child(2) {
+  background: linear-gradient(90deg, rgba(33 150 243 / 5%), transparent);
+  border-left: 5px solid rgb(33, 150, 243);
+}
+.icons-container div:nth-child(1) li:nth-child(3) {
+  background: linear-gradient(90deg, rgba(0 216 255 / 5%), transparent);
+  border-left: 5px solid #00d8ff;
+}
+.icons-container div:nth-child(1) li:nth-child(4) {
+  background: linear-gradient(90deg, rgba(255 255 255 / 5%), transparent);
+  border-left: 5px solid #fff;
+}
+.icons-container div:nth-child(1) li:nth-child(5) {
+  background: linear-gradient(90deg, rgba(0 180 182 / 5%), transparent);
+  border-left: 5px solid #00b4b6;
+}
+.icons-container div:nth-child(2) li:nth-child(1) {
+  background: linear-gradient(90deg, rgba(222 76 54 / 5%), transparent);
+  border-left: 5px solid #de4c36;
+}
+.icons-container div:nth-child(2) li:nth-child(2) {
+  background: linear-gradient(90deg, rgba(0 0 0 / 5%), transparent);
+  border-left: 5px solid #000;
+}
+.icons-container div:nth-child(2) li:nth-child(3) {
+  background: linear-gradient(90deg, rgba(34 167 242 / 5%), transparent);
+  border-left: 5px solid #22a7f2;
+}
+.icons-container div:nth-child(2) li:nth-child(4) {
+  background: linear-gradient(90deg, rgba(203 56 55 / 5%), transparent);
+  border-left: 5px solid #cb3837;
+}
+.icons-container div:nth-child(2) li:nth-child(5) {
+  background: linear-gradient(90deg, rgba(255 255 0 / 5%), transparent);
+  border-left: 5px solid #ffff00;
+} */
+
+.skill-item {
   display: flex;
-  justify-content: center;
-  letter-spacing: 0.5rem;
-  font-size: 1.5rem;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  min-height: 30px;
+  border-left: 5px solid turquoise;
 }
-.icons-container div:nth-child(1) > div span::first-letter,
-.icons-container div:nth-child(2) > div span::first-letter,
-.icons-container div:nth-child(3) > div span::first-letter,
-.icons-container div:nth-child(4) > div span::first-letter,
-.icons-container div:nth-child(5) > div span::first-letter,
-.icons-container div:nth-child(6) > div span::first-letter,
-.icons-container div:nth-child(7) > div span::first-letter {
-  font-weight: bold;
-  text-transform: uppercase;
+.skill-item svg,
+.skill-item img {
+  width: 30px;
 }
-.icons-container div:nth-child(1) > div span::first-letter {
-  color: yellow;
-}
-.icons-container div:nth-child(2) > div span::first-letter {
-  color: #fc490b;
-}
-.icons-container div:nth-child(3) > div span::first-letter {
-  color: #2196f3;
-}
-.icons-container div:nth-child(4) > div span::first-letter {
-  color: #00d8ff;
-}
-.icons-container div:nth-child(5) > div span::first-letter {
-  color: #00b4b6;
-}
-.icons-container div:nth-child(6) > div span::first-letter {
-  color: black;
-}
-.icons-container div:nth-child(7) > div span::first-letter {
-  color: white;
+.skill-item span {
+  font-size: 1.8rem;
 }
 
 .intermedio {
@@ -330,13 +348,13 @@ header {
   text-align: center;
   font-style: italic;
   background: linear-gradient(131deg, #ff4d00, #2500f9);
-  transition: font-size 0.2s linear;
   text-shadow: 0px 0px 20px yellow;
 }
 
 .soft-skills-container {
   min-height: 100vh;
   padding: 0 2rem;
+  margin-bottom: 10rem;
 }
 .soft-skills {
   padding-top: 5rem;
