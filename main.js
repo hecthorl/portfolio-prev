@@ -1,6 +1,8 @@
 import randomBG from "./randomBG";
 
 const loader = document.querySelector(".loader-dom");
+const nav = document.querySelector(".navigation");
+const btnContact = document.querySelector(".navigation button");
 const $ = (className) => document.querySelectorAll(className);
 
 document.body.onload = () => {
@@ -11,7 +13,7 @@ document.body.onload = () => {
 const speedChange = 4e3;
 
 const funcionDeTipoFlecha = (item) => {
-  item.style.backgroundColor = `#${randomBG()}`;
+  item.style.backgroundColor = randomBG();
 };
 
 setInterval(() => {
@@ -23,3 +25,8 @@ setInterval(() => {
 setInterval(() => {
   $(".circle-3").forEach(funcionDeTipoFlecha);
 }, speedChange);
+
+(() => {
+  const isFirefox = navigator.userAgent.includes("Firefox");
+  if (isFirefox) nav.classList.add("bg-primary");
+})();

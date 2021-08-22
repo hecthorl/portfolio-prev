@@ -3,9 +3,15 @@
     position: sticky;
     top: 0;
   }
+  .bg-primary {
+    background-color: #161a22d1 !important;
+  }
   .navigation {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: transparent;
     backdrop-filter: blur(1rem);
+  }
+  .navigation button {
+    /**/
   }
   .navigation a {
     color: white;
@@ -35,11 +41,18 @@
     font-size: 3.5rem;
   }
 
+  .icons-container {
+    padding: 14rem 1rem;
+  }
+
   .intermedio {
     font-size: 4.5rem;
   }
 
   .projects-container > div {
     flex-direction: row-reverse;
+  }
+  .projects-container > div:nth-child(even) {
+    flex-direction: row;
   }
 }

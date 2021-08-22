@@ -20,6 +20,7 @@ img {
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 li {
   list-style: none;
@@ -83,6 +84,48 @@ header {
 
 .navigation a {
   color: var(--bg-primary);
+  font-size: 2rem;
+  cursor: pointer;
+}
+.navigation button {
+  background-color: transparent;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+#toBtn {
+  position: relative;
+}
+/* .toclosePopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+} */
+.popUp-contact {
+  width: 300px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10rem);
+  position: absolute;
+  top: 43px;
+  right: 0;
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: default;
+  animation: popUpContact 0.2s ease-in;
+}
+@keyframes popUpContact {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /*LOGO-BTN*/
@@ -97,15 +140,37 @@ header {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .hero-section h1 {
   font-size: 4.5rem;
+  animation: inH1 0.5s linear;
 }
 .hero-section span {
+  animation: inSpan 0.5s linear;
   font-size: 2rem;
 }
-
+@keyframes inH1 {
+  0% {
+    transform: translateX(-30rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes inSpan {
+  0% {
+    transform: translateX(30rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 /*about_me-section*/
 .about_me-section {
   min-height: 100vh;
@@ -123,6 +188,7 @@ header {
 .projects-section h4 {
   font-size: var(--size-sub_title);
   width: fit-content;
+  width: -moz-fit-content;
   margin: 0 auto;
   padding: 2rem;
   color: var(--color-secondary);
@@ -144,12 +210,14 @@ header {
   max-width: 400px;
   min-width: 300px;
   object-fit: contain;
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.15));
+  border-radius: 100%;
 }
 .image-container {
   position: relative;
-  background-color: rgb(22 26 34 / 82%);
-  border-radius: 100%;
-  overflow: hidden;
+  /* background-color: rgb(22 26 34 / 82%); */
+  /* box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.1); */
+  /* inset 0 0 40px 40px rgba(255, 255, 255, 0.1); */
   width: -moz-fit-content;
   height: -moz-fit-content;
   width: fit-content;
@@ -179,7 +247,7 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  animation: round 10s infinite;
+  animation: round 15s infinite linear;
   z-index: -1;
 }
 
@@ -190,25 +258,25 @@ header {
   position: absolute;
   width: 190px;
   height: 190px;
-  mix-blend-mode: soft-light;
+  /* mix-blend-mode: soft-light; */
   filter: blur(10px);
-  animation: blob 10s infinite;
+  animation: blob 20s infinite;
   transition: background-color 1s ease-in;
 }
 .circle-1 {
   background-color: purple;
-  top: 20px;
-  right: 80px;
+  top: 0;
+  right: 48px;
 }
 .circle-2 {
   background-color: yellow;
-  top: 40px;
-  right: 30px;
+  top: 83px;
+  right: 0;
 }
 .circle-3 {
   background-color: orange;
-  top: 50px;
-  right: 30px;
+  top: 81px;
+  left: 0;
 }
 
 @keyframes round {
@@ -271,56 +339,16 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   place-content: center;
   gap: 5rem;
-  padding: 14rem 1rem;
+  padding: 5rem 1rem;
   margin: 0 auto;
   max-width: 1260px;
+  transition: padding 0.3s ease-out;
 }
 .icons-container h6 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
   color: var(--color-secondary);
 }
-
-/* .icons-container div:nth-child(1) li:nth-child(1) {
-  background: linear-gradient(90deg, rgba(255 255 0 / 5%), transparent);
-  border-left: 5px solid #ffff00;
-}
-.icons-container div:nth-child(1) li:nth-child(2) {
-  background: linear-gradient(90deg, rgba(33 150 243 / 5%), transparent);
-  border-left: 5px solid rgb(33, 150, 243);
-}
-.icons-container div:nth-child(1) li:nth-child(3) {
-  background: linear-gradient(90deg, rgba(0 216 255 / 5%), transparent);
-  border-left: 5px solid #00d8ff;
-}
-.icons-container div:nth-child(1) li:nth-child(4) {
-  background: linear-gradient(90deg, rgba(255 255 255 / 5%), transparent);
-  border-left: 5px solid #fff;
-}
-.icons-container div:nth-child(1) li:nth-child(5) {
-  background: linear-gradient(90deg, rgba(0 180 182 / 5%), transparent);
-  border-left: 5px solid #00b4b6;
-}
-.icons-container div:nth-child(2) li:nth-child(1) {
-  background: linear-gradient(90deg, rgba(222 76 54 / 5%), transparent);
-  border-left: 5px solid #de4c36;
-}
-.icons-container div:nth-child(2) li:nth-child(2) {
-  background: linear-gradient(90deg, rgba(0 0 0 / 5%), transparent);
-  border-left: 5px solid #000;
-}
-.icons-container div:nth-child(2) li:nth-child(3) {
-  background: linear-gradient(90deg, rgba(34 167 242 / 5%), transparent);
-  border-left: 5px solid #22a7f2;
-}
-.icons-container div:nth-child(2) li:nth-child(4) {
-  background: linear-gradient(90deg, rgba(203 56 55 / 5%), transparent);
-  border-left: 5px solid #cb3837;
-}
-.icons-container div:nth-child(2) li:nth-child(5) {
-  background: linear-gradient(90deg, rgba(255 255 0 / 5%), transparent);
-  border-left: 5px solid #ffff00;
-} */
 
 .skill-item {
   display: flex;
@@ -336,7 +364,7 @@ header {
   width: 30px;
 }
 .skill-item span {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .intermedio {
@@ -394,7 +422,6 @@ header {
 .projects-container > div {
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 1rem;
-  padding: 0 1rem;
   background-color: rgb(22 26 34 / 50%);
   display: flex;
   flex-direction: column;
@@ -412,7 +439,7 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  box-shadow: 0 0 20px 0 yellow, 0 0 20px 0 yellow;
+  box-shadow: 0 0 20px 0 #ffd700, 0 0 20px 0 #ffd700;
   border-radius: 1rem;
   z-index: -1;
 }
@@ -429,6 +456,7 @@ header {
 .projects-container > div > div:nth-child(1) {
   flex: 1;
   max-width: 450px;
+  padding: 0 1rem;
 }
 .projects-container > div > div:nth-child(1) span {
   font-size: 3.5rem;
@@ -473,4 +501,5 @@ header {
 .bebebidas-img,
 .journalapp-img {
   max-width: 500px;
+  padding: 0 1rem;
 }
