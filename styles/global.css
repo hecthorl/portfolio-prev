@@ -40,11 +40,11 @@ button:focus {
 body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   background-color: var(--bg-primary);
+  overflow: hidden;
 }
 
 body > img {
   position: absolute;
-  width: 100%;
   height: 100%;
   z-index: -10;
   top: 0;
@@ -54,12 +54,20 @@ body > img {
 
 .loader-dom {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 10000;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: aliceblue;
   color: black;
+}
+.loader-dom span {
+  color: black;
+  font-size: 5rem;
+  font-family: unset;
 }
 
 /* Header */
@@ -92,40 +100,6 @@ header {
   font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
-}
-#toBtn {
-  position: relative;
-}
-/* .toclosePopup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100vh;
-} */
-.popUp-contact {
-  width: 300px;
-  height: 100px;
-  background-color: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10rem);
-  position: absolute;
-  top: 43px;
-  right: 0;
-  border-radius: 10px;
-  padding: 1rem;
-  cursor: default;
-  animation: popUpContact 0.2s ease-in;
-}
-@keyframes popUpContact {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 
 /*LOGO-BTN*/
@@ -416,7 +390,7 @@ header {
   padding: 0 1rem;
   display: grid;
   gap: 15rem;
-  grid-template-rows: repeat(4, minmax(280px, 1fr));
+  grid-template-rows: repeat(3, minmax(280px, 1fr));
   margin: 15rem 0;
 }
 .projects-container > div {
