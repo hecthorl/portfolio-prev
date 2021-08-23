@@ -153,7 +153,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
 }
 
 .about_me-section h4,
@@ -174,6 +174,23 @@ header {
   flex-direction: column;
   gap: 3rem;
   margin: 0 auto;
+}
+
+.correo {
+  padding: 1rem;
+  background-color: hsl(220, 21%, 20%);
+  border-radius: 5px;
+  transition: background-color 0.5s ease-in;
+}
+.correo button {
+  background-color: transparent;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.correo svg {
+  width: 2rem;
+  fill: white;
+  pointer-events: none;
 }
 
 .about_me-section > div > div {
@@ -232,7 +249,6 @@ header {
   position: absolute;
   width: 190px;
   height: 190px;
-  /* mix-blend-mode: soft-light; */
   filter: blur(10px);
   animation: blob 20s infinite;
   transition: background-color 1s ease-in;
@@ -290,6 +306,8 @@ header {
   font-size: 1.8rem;
   color: var(--color-secondary);
   max-width: 500px;
+  padding-bottom: 2rem;
+  align-self: flex-start;
 }
 
 .about_me-content p:first-of-type {

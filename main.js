@@ -1,6 +1,7 @@
 import randomBG from "./randomBG";
 
 const loader = document.querySelector(".loader-dom");
+const btnEmail = document.querySelector(".correo button");
 // const btnContainer = document.querySelector("#toBtn");
 // const fakeScreen = document.createElement("div");
 // const popup = document.createElement("div");
@@ -53,3 +54,18 @@ setInterval(() => {
   const isFirefox = navigator.userAgent.includes("Firefox");
   if (isFirefox) nav.classList.add("bg-primary");
 })();
+
+btnEmail.onclick = () => {
+  copyPageUrl();
+  const correo = btnEmail.parentElement;
+  correo.style.backgroundColor = "#00ff0029";
+};
+
+async function copyPageUrl() {
+  try {
+    await navigator.clipboard.writeText("hlvm03@gmail.com");
+    console.log("Page URL copied to clipboard");
+  } catch (err) {
+    console.error("Failed to copy: ", err);
+  }
+}
